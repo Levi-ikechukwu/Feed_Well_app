@@ -1,0 +1,386 @@
+*{
+    margin:  0%;
+    padding: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+     sans-serif;
+  }
+  body{
+    background-color: #fef7e8;
+    width: 100%;
+    height: 110vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+     sans-serif;
+  }
+  .container{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .container .circle{
+    width: 750px;
+    height: 750px;
+    background-color: #FADAC4;
+    position: absolute;
+    right: 0px;
+    top: -170px;
+    border-radius: 750px;
+    z-index: 1;
+  }
+  .container .header{
+    width: 85%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+  }
+  .container .header .logo{
+    width: 15%;
+  }
+  .container .header .logo img{
+    width: 90%;
+  }
+  .container .header .menu{
+    display: flex;
+    align-items: center;
+    width: 63%;
+    justify-content: space-between;
+  }
+  .container .header .me{
+    display: none;
+  }
+  .container .header .menu .menu1 ul{
+    display: flex;
+    list-style-type: none;
+  }
+  .container .header .menu .menu1 ul li a{
+    text-decoration: none;
+    color: #EB6333;
+    padding: 23px;
+    font-size: 19px;
+   font-weight: 500;
+  }
+  .container .header .menu .btn {
+    position: relative;
+  }
+  .container .header .menu .btn button{
+    text-align: center;
+    padding: 7px 37px 10px 25px;
+    border-radius: 40px;
+    background-color: #eb6333;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .container .header .menu .btn .icon{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    color: white;
+    transform: rotate(40deg);
+  }
+
+  /* end of Header */
+
+  /* begining of Hero section */
+  .container .hero{
+    width: 85%;
+    position: relative;
+    z-index: 30;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 4%;
+  }
+  .container .hero .left{
+    width: 48%;
+   
+  }
+  .container .hero .left .tab{
+    display: none;
+  }
+  .container .hero .left .mobile{
+    display: none;
+  }
+  .container .hero .left .desktop h6{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+  .container .hero .left .desktop h3{
+    font-size: 65px;
+  }
+  .container .hero .left form{
+    margin-top: 30px;
+    background-color: white;
+    padding: 3px 2px 3px 10px;
+    border-radius: 30px;
+    width: 90%;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .container .hero .left form input{
+    margin-left: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+  }
+  .container .hero .left form button{
+    width: 30%;
+    padding: 15px 0px;
+    border-radius: 40px;
+    border: 0px;
+    color: white;
+    background-color: black;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .container .hero .left .icons {
+    width: 50%;
+    margin-top: 30px;
+    display: flex; 
+    justify-content: space-between;
+  }
+  .container .hero .left .icons .ic{
+    width: 8%;
+    font-size: 22px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .container .hero .right{
+    width: 48%;
+  position: relative;
+  }
+  .container .hero .right .img {
+    width: 43%;
+    margin: auto;
+    position: relative;
+    left: 15px;
+    bottom: 3px;
+  }
+  .container .hero .right .img img{
+    width: 100%;  
+  }
+  .container .hero .right .sharon{
+    background-color: white;
+    width: 300px;
+    padding: 10px 10px 10px 5px;
+    position: absolute;
+    bottom: 37px;
+    left: 35px;
+    border-radius: 15px;
+    display: flex;
+    height: 100px;
+  }
+  .container .hero .right .sharon .left-img{
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    /* height: 100px; */
+  }
+
+.container .hero .right .sharon .left-img img{
+  width: 40px;
+  border-radius: 30px;
+  height: 40px;
+}
+  .container .hero .right .sharon .right{
+    width: 79%;
+    margin-top: 2px;
+  }
+
+  @media(max-width: 768px){
+    .container .circle{
+      width: 750px;
+      height: 750px;
+      background-color: #FADAC4;
+      position: absolute;
+      right: 0px;
+      top: -260px;
+      
+    }
+    .container .header{
+      width: 90%;
+    }
+    .container .header .menu{
+      width:70%;
+    }
+    .container .header .menu .menu1 ul li a{
+      padding: 15px;
+    }
+    .container .hero{
+      gap: 1%;
+    }
+    .container .hero .left .desktop h6{
+      display: none;
+  }
+  .container .hero .left .desktop h3{
+    display: none;
+  }
+  .container .hero .left{
+    width: 58%;
+  }
+  .container .hero .right{
+    width: 40%;
+  }
+  
+  .container .hero .left .tab{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .container .hero .left .tab h3{
+    font-size: 40px;
+  }
+  .container .hero .left .tab h6{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+  .container .hero .left .icons {
+    width: 55%;
+    margin-top: 25px;
+  }
+  .container .hero .left .icons .ic{
+    width: 10%;
+    font-size: 20px;
+    padding: 12px;
+  }
+  .container .hero .right .img {
+    width: 90%;
+    left: 0px;
+    bottom: 0px;
+  }
+  .container .hero .right .sharon{
+    bottom: 75px;
+    left: 0px;
+  }
+  }
+
+  @media (max-width: 425px){
+    .container .header .me{
+      display: block;
+    }
+    .container .circle{
+      top: -280px;
+    }
+    .container .header .menu{
+      display: none;
+    }
+    .container .header .logo{
+      width: 35%;
+    }
+    .container .hero{
+      margin-top: 0px;
+      flex-wrap: wrap-reverse;
+    }
+    .container .hero .left{
+      width: 100%;
+    }
+    .container .hero .right{
+      width: 100%;
+      margin-top:40px;
+      margin-bottom: 30px;
+    }
+    .container .hero .right .img{
+      width: 63%;
+    }
+    .container .hero .right .sharon{
+    left: 0px;  
+    bottom: 72px; 
+    width: 100%;
+    }
+    .container .hero .left .icons {
+      width: 100%;
+      margin-top: 25px;
+    }
+    .container .hero .left .icons .ic{
+      width: 7%;
+      font-size: 25px;
+      padding: 12px;
+    }
+    .container .hero .left form{
+      width: 100%;
+    }
+    
+  }
+
+  @media(max-width: 375px){
+    .container .circle{
+      top: -280px;
+      right: 0px;
+    }
+    .container .hero .right .sharon{
+      bottom: 80px; 
+      }
+      .container .hero .left .tab h3{
+        font-size: 35px;  
+      }
+      .container .hero .left .icons {
+        width: 100%;
+
+      }
+      .container .hero .left .icons .ic{
+        width: 6%;
+        font-size: 20px;
+        padding: 12px;
+      }
+      .container .hero .left form button{
+        width: 35%;
+      }
+      .container .hero .left .tab {
+        display: block;
+      }
+      .container .hero .left .mobile{
+        display: none;
+      }
+      .container .hero .left .mobile h3{
+        font-size: 45px;
+      }
+      .container .hero .left .mobile h6{
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom: 20px;
+      }
+      .container .hero .right .img{
+        width: 80%;
+      }
+      .container .hero .left .icons .ic{
+        width: 6%;
+        font-size: 17px;
+        padding: 12px;
+      }
+      .container .hero .left form button{
+        width: 45%;
+      }
+      .container .hero .left form input{
+        font-size: 17px;
+      }
+  }
+  @media(max-width: 375px){
+    .container .hero .left .tab {
+      display: none;
+    }
+    .container .hero .left .mobile{
+      display: block;
+    }
+    .container .hero .left .mobile h3{
+      font-size: 26px;
+    }
+  }
